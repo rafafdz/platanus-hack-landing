@@ -5,8 +5,8 @@ import Tilt from 'react-parallax-tilt';
 
 const Sponsors = () => {
   const sponsorLogos = [
-    { src: 'fintual-logo-white.png', size: 400, alt: 'Fintual logo' },
-    { src: 'aws-logo-white.png', size: 200, alt: 'Amazon Web Services logo' }
+    { src: 'fintual-logo-white.png', size: 400, alt: 'Fintual logo', url: 'https://fintual.cl/' },
+    { src: 'aws-logo-white.png', size: 200, alt: 'Amazon Web Services logo', url: 'https://aws.amazon.com/' }
   ];
 
   return (
@@ -14,7 +14,7 @@ const Sponsors = () => {
       <TypewriterTitle text="$ ls sponsors/*.svg" className="text-4xl md:text-5xl font-bold mb-12 text-center" />
 
       <div className="flex flex-wrap items-center justify-center gap-32 py-16">
-        {sponsorLogos.map(({ src, size, alt }, index) => (
+        {sponsorLogos.map(({ src, size, alt, url }, index) => (
           <Tilt
             key={index}
             className="parallax-effect"
@@ -25,7 +25,10 @@ const Sponsors = () => {
             scale={1.05}
             gyroscope={true}
           >
-            <div 
+            <a 
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-auto flex items-center justify-center transition-transform duration-300 hover:scale-110"
             >
               <Image
@@ -34,7 +37,7 @@ const Sponsors = () => {
                 height={size}
                 width={size}
               />
-            </div>
+            </a>
           </Tilt>
         ))}
       </div>

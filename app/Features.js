@@ -37,7 +37,7 @@ const Features = () => {
     },
     {
       title: "pitches",
-      description: "en muchas hackatones se pierden buenos proyectos por malos pitches. Te ayudaremos a que el pitch le haga justicia a tu proyecto.",
+      description: "en muchas hackatones se pierden buenos proyectos por malos pitches. te ayudaremos a que el pitch le haga justicia a tu proyecto.",
       Icon: FaMicrophone
     },
     {
