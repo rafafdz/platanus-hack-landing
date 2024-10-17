@@ -43,7 +43,7 @@ export default function Home() {
         <div className="w-full h-full">
           <div className="relative h-full text-xs">
             <Tilt
-              className="parallax-effect absolute top-1/4 left-1/2 transform -translate-y-1/2"
+              className="parallax-effect absolute top-[30px] left-1/4 lg:top-1/4 lg:left-1/2 transform -translate-y-1/2 -translate-x-1/2"
               tiltMaxAngleX={15}
               tiltMaxAngleY={15}
               perspective={1000}
@@ -53,7 +53,7 @@ export default function Home() {
               tiltAngleXManual={calculateTiltAngleX()}
               tiltAngleYManual={calculateTiltAngleY()}
             >
-              <div className="relative w-[500px] h-[500px]">
+              <div className="relative size-[150px] lg:size-[450px]">
                 <Image
                   src="/banana.svg"
                   alt="Banana Logo"
