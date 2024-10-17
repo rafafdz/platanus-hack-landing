@@ -12,7 +12,7 @@ const DynamicMap = dynamic(() => import('./Map'), {
 });
 
 const Location = () => {
-  const position = [-33.4267, -70.6167]; // Coordinates for Providencia 229, Santiago, Chile
+  const position = [-33.43586850387162, -70.6302271011865]
   const [isHovered, setIsHovered] = useState(false);
 
   return (
