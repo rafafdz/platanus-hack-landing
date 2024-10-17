@@ -7,17 +7,14 @@ const Description = () => {
 
   const paragraphs = [
     [
-      { text: "Platanus Hack es un evento intensivo de" },
-      { text: " 36 horas ", style: "font-bold text-green-400" },
-      { text: "donde desarrolladores, diseñadores y emprendedores se unen para crear soluciones innovadoras a problemas reales. Inspirado en las mejores hackatones del mundo, este evento pionero en Chile busca fomentar la creatividad, la colaboración y el desarrollo de habilidades en un ambiente desafiante y emocionante." }
+      { text: "platanus hack reúne el mejor talento techie de chile para crear soluciones a problemas reales." },
+      { text: " de cero a producto en 36 horas.", style: "font-bold text-primary" }
     ],
     [
-      { text: "Durante el evento, los participantes tendrán acceso a mentores expertos, recursos tecnológicos de vanguardia y la oportunidad de trabajar en equipos multidisciplinarios. Desde la concepción de la idea hasta la presentación final, Platanus Hack ofrece una experiencia inmersiva que culmina con la posibilidad de presentar tu proyecto ante un panel de jueces de la industria tech y potenciales inversores." }
+      { text: "unimos equipos de 3 a 5 personas, cafeína, mentores y pitches asistidos por platanus para tener una hackatón pionera de su clase en chile." }
     ],
     [
-      { text: "¿Estás listo para" },
-      { text: " desafiar tus límites ", style: "font-bold text-yellow-400" },
-      { text: "y crear algo extraordinario? Únete a nosotros en Platanus Hack y sé parte de la próxima generación de innovadores tecnológicos en Chile." }
+      { text: "el foco es crear soluciones a problemas reales, presentarlas como corresponde con pitches que estén a la altura de la solución y que quede deployeado, disponible a cualquier persona alrededor del mundo." },
     ],
   ];
 
@@ -74,13 +71,15 @@ const Description = () => {
         }
       };
 
-      paragraphs.forEach((paragraph) => {
+      paragraphs.forEach((paragraph, index) => {
         if (typeof paragraph === 'string') {
           processText([{ text: paragraph, style: null }]);
         } else {
           processText(paragraph);
         }
-        newLines.push({ number: lineNumber++, content: [{ text: '', style: null }] });
+        if (index < paragraphs.length - 1) {
+          newLines.push({ number: lineNumber++, content: [{ text: '', style: null }] });
+        }
       });
 
       document.body.removeChild(tempElement);
