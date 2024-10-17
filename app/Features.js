@@ -50,17 +50,17 @@ const Features = () => {
   const secondaryFeatures = [
     {
       title: "comida",
-      description: "mantendremos tu energía al máximo con deliciosas opciones de comida durante todo el evento.",
+      description: "suficiente comida para que sólo te preocupes en hackear y suficiente cafeína para quedar tiritando. no lo hagas.",
       Icon: FaUtensils
     },
     {
       title: "sponsors",
-      description: "conoce a nuestros patrocinadores y las oportunidades que ofrecen para impulsar tu proyecto.",
+      description: "las mejores empresas tech estarán acá. es posible que termines con trabajo.",
       Icon: FaHandshake
     },
     {
       title: "networking",
-      description: "conecta con otros participantes, mentores y profesionales de la industria tech.",
+      description: "nos enfocamos en filtrar a los mejores techies. vale la pena que los conozcas.",
       Icon: FaUsers
     }
   ];

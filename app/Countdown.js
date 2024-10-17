@@ -43,7 +43,7 @@ export default function Countdown() {
 
     return (
         <section className="min-h-screen flex flex-col items-center justify-center p-4 gap-8">
-            <TypewriterTitle text="$ apply_countdown.tick()" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
+            <TypewriterTitle text="$ apply_countdown.tick()" className="text-2xl md:text-5xl font-bold text-center mb-4" />
             <p className="text-xl text-center">se te acaba el tiempo para postular. deadline @ 2024-11-14T00:00:00-03:00 </p>
             <Tilt
                 className="parallax-effect"
