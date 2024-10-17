@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`dark ${ubuntuMono.variable} ${sourceCodePro.variable}`}>
-      <body className="font-source-code-pro bg-zinc-900 text-white">{children}</body>
+      <body className="font-source-code-pro bg-zinc-950 text-white">{children}</body>
     </html>
   )
 }

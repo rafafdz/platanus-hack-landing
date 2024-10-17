@@ -21,7 +21,7 @@ export default function CodeTyper() {
       >
         <TypingCanvas code={code} speed={0.3} />
       </pre>
-      <div className="absolute bottom-0 left-0 right-0 h-[15%] bg-gradient-to-t from-zinc-900 to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-[15%] bg-gradient-to-t from-zinc-950 to-transparent pointer-events-none"></div>
     </div>
   )
 }

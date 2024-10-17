@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="relative font-source-code-pro">
-      <div className="absolute inset-0 overflow-hidden w-full h-screen bg-gradient-to-b from-zinc-800 to-zinc-900">
+      <div className="absolute inset-0 overflow-hidden w-full h-screen bg-gradient-to-b from-zinc-800 to-zinc-950">
         <div className="relative h-full text-xs w-screen">
           <div className="size-[170px] lg:size-[450px] mr-12 lg:mr-0 absolute top-[60px] left-1/4 lg:left-1/2 lg:top-1/4 lg:ml-4">
             <Tilt

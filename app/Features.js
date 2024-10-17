@@ -13,7 +13,7 @@ const FeatureCard = ({ title, description, Icon, isPrimary = true }) => (
     scale={1.03}
     gyroscope={true}
   >
-    <div className="bg-gradient-to-br from-zinc-800 to-zinc-900 p-4 rounded-xl shadow-lg h-full">
+    <div className="bg-gradient-to-br from-zinc-800 to-zinc-950 p-4 rounded-xl shadow-lg h-full">
       <div className="text-4xl mb-3">
         <Icon className={`w-10 h-10 ${isPrimary ? 'text-primary' : 'text-zinc-400'}`} />
       </div>
