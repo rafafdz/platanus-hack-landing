@@ -7,9 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'ubuntu-mono': ['var(--font-ubuntu-mono)'],
+        'source-code-pro': ['var(--font-source-code-pro)'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: '#FFEC40',
+        secondary: '#F9BC12',
       },
     },
   },

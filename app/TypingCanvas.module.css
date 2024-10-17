@@ -1,0 +1,25 @@
+.typingCanvas {
+    font-family: monospace;
+    font-size: 12px;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.line {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing linear forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
