@@ -6,6 +6,7 @@ import TypewriterTitle from './TypewriterTitle'
 import CodeTyper from './CodeTyper'
 import Description from './Description'
 import Features from './Features'
+import Countdown from './Countdown'
 import Location from './Location'
 import Sponsors from './Sponsors'
 import Footer from './Footer'
@@ -82,6 +83,7 @@ export default function Home() {
       </div>
       <Description />
       <Features />
+      <Countdown />
       <Location />
       <Sponsors />
       <Footer />
