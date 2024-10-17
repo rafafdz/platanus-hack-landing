@@ -1,5 +1,6 @@
 'use client'
-import { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
 import TypewriterTitle from './TypewriterTitle'
@@ -13,6 +14,14 @@ import Footer from './Footer'
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [hasLoggedMessage, setHasLoggedMessage] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || hasLoggedMessage) return;
+
+    console.log('%chey, you look like a hacker. we have a cool hackathon for you. apply at https://platan.us/hack/apply/devtools', 'font-size: 30px; color: #FFEC40; font-weight: bold;');
+    setHasLoggedMessage(true);
+  }, [hasLoggedMessage]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
