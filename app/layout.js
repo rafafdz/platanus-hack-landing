@@ -1,4 +1,5 @@
 import { Ubuntu_Mono, Source_Code_Pro } from 'next/font/google'
+import { PostHogProvider } from './PostHogProvider'
 import "./globals.css"
 
 const ubuntuMono = Ubuntu_Mono({ 
@@ -22,8 +23,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`dark ${ubuntuMono.variable} ${sourceCodePro.variable}`}>
-      <body className="font-source-code-pro bg-zinc-950 text-white">{children}</body>
-    </html>
+    <PostHogProvider>
+      <html lang="es" className={`dark ${ubuntuMono.variable} ${sourceCodePro.variable}`}>
+        <body className="font-source-code-pro bg-zinc-950 text-white">{children}</body>
+      </html>
+    </PostHogProvider>
   )
 }
