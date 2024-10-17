@@ -16,8 +16,8 @@ const sourceCodePro = Source_Code_Pro({
 })
 
 export const metadata = {
-  title: 'Platanus Hack',
-  description: 'Únete a nuestro emocionante evento de hackathon',
+  title: 'patanus hack',
+  description: 'Los mejores techies de Chile construyendo soluciones con impacto. De cero a producto en 36 horas.',
 }
 
 export default function RootLayout({ children }) {
