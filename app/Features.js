@@ -1,7 +1,9 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import TypewriterTitle from './TypewriterTitle';
-import { FaChalkboardTeacher, FaBed, FaMicrophone, FaGlobeAmericas, FaUtensils, FaHandshake, FaUsers } from 'react-icons/fa';
+import {FaVideo, FaChalkboardTeacher, FaBed, FaMicrophone, FaGlobeAmericas, FaUtensils, FaHandshake, FaUsers } from 'react-icons/fa';
+import { GiMoneyStack } from 'react-icons/gi';
+import { RiOpenSourceFill } from 'react-icons/ri';
 
 const FeatureCard = ({ title, description, Icon, isPrimary = true }) => (
   <Tilt
@@ -41,9 +43,24 @@ const Features = () => {
       Icon: FaMicrophone
     },
     {
+      title: "chin chin",
+      description: "1000 dólares en AWS por grupo para construir como una startup platanus.",
+      Icon: GiMoneyStack
+    },
+    {
       title: "deploy it",
       description: "tu solución la tiene que puede usar cualquier persona del mundo. terminarás con un producto accesible públicamente.",
       Icon: FaGlobeAmericas
+    },
+    {
+      title: "open source",
+      description: "todos los proyectos serán open source, licencia MIT.",
+      Icon: RiOpenSourceFill
+    },
+    {
+      title: "livestream",
+      description: "los demos / pitches serán transmitidos en vivo. tu abuelita juzgará tu proyecto.",
+      Icon: FaVideo
     }
   ];
 
