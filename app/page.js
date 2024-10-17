@@ -66,6 +66,8 @@ export default function Home() {
       </div>
       <div className="relative z-10 flex h-screen" >
         <div className="flex flex-col justify-center items-start pl-10 md:pl-20 lg:pl-32">
+          <div className="h-[20%] lg:hidden">
+          </div>
           <h1 className="font-ubuntu-mono text-6xl md:text-7xl lg:text-8xl font-bold mb-4 relative z-10">platanus hack</h1>
           <TypewriterTitle text={'22-24 nov. santiago.'} className="text-2xl md:text-3xl relative z-10 mb-8 h-8" />
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
