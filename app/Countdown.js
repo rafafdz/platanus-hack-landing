@@ -7,6 +7,11 @@ import TypewriterTitle from './TypewriterTitle';
 export default function Countdown() {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const [isHovered, setIsHovered] = useState(false);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -62,7 +67,7 @@ export default function Countdown() {
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {timeComponents}
+                        {isClient && timeComponents}
                     </div>
                 </div>
             </Tilt>
