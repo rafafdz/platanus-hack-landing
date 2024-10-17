@@ -17,7 +17,7 @@ const Location = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center p-4">
-      <TypewriterTitle text="$ curl ipinfo.io/geo" className="text-4xl md:text-5xl font-bold mb-12 text-center" />
+      <TypewriterTitle text="$ curl ipinfo.io/geo" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
       
       <Tilt
         className="parallax-effect w-full max-w-lg"

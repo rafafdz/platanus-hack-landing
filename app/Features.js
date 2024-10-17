@@ -5,7 +5,7 @@ import { FaChalkboardTeacher, FaBed, FaMicrophone, FaGlobeAmericas, FaUtensils, 
 
 const FeatureCard = ({ title, description, Icon, isPrimary = true }) => (
   <Tilt
-    className="parallax-effect w-[150px] sm:w-[200px] md:w-[220px] lg:w-[240px] aspect-square"
+    className="parallax-effect w-[240px] aspect-square"
     tiltMaxAngleX={10}
     tiltMaxAngleY={10}
     perspective={800}
@@ -67,11 +67,11 @@ const Features = () => {
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16 min-h-screen flex flex-col items-center justify-center">
-      <TypewriterTitle text="$ diff platanus-hack other-hacks" className="text-4xl md:text-5xl font-bold mb-12 text-center" />
+      <TypewriterTitle text="$ diff platanus-hack other-hacks" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
       <p className="text-xl leading-relaxed mb-16 text-center max-w-3xl mx-auto">
-        tomamos elementos de las hackatones top del mundo para crear una hackathon pionera en chile.
+        tomamos elementos de las hackatones top del mundo para crear una hackatón pionera en chile.
       </p>
-      <div className="flex flex-wrap justify-center gap-4 w-full">
+      <div className="flex flex-col items-center lg:flex-row flex-wrap justify-center gap-4 w-full">
         {primaryFeatures.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
         ))}

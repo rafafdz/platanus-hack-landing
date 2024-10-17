@@ -47,7 +47,7 @@ const Description = () => {
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16 min-h-screen flex flex-col items-center justify-center">
-      <TypewriterTitle text="$ vim hack-description.txt" className="text-4xl md:text-5xl font-bold mb-12 text-center" />
+      <TypewriterTitle text="$ vim hack-description.txt" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
       <div className="leading-relaxed mb-16 text-left max-w-3xl mx-auto font-mono whitespace-pre-wrap">
         {lines.map((line, index) => (
           <div key={index} className="flex">
