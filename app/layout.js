@@ -17,7 +17,7 @@ const sourceCodePro = Source_Code_Pro({
 })
 
 export const metadata = {
-  title: 'patanus hack',
+  title: 'platanus hack',
   description: 'Los mejores techies de Chile construyendo soluciones con impacto. De cero a producto en 36 horas.',
 }
 
