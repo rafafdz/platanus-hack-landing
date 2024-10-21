@@ -22,7 +22,7 @@ export default function Countdown() {
     }, []);
 
     function calculateTimeLeft() {
-        const difference = +new Date("2024-11-14T00:00:00-03:00") - +new Date();
+        const difference = +new Date("2024-11-07T00:00:00-03:00") - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {
@@ -49,7 +49,7 @@ export default function Countdown() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center p-4 gap-8">
             <TypewriterTitle text="$ apply_countdown.tick()" className="text-2xl md:text-5xl font-bold text-center mb-4" />
-            <p className="text-xl text-center">se te acaba el tiempo para postular. deadline @ 2024-11-14T00:00:00-03:00 </p>
+            <p className="text-xl text-center">se te acaba el tiempo para postular. deadline @ 2024-11-07T00:00:00-03:00 </p>
             <Tilt
                 className="parallax-effect"
                 tiltMaxAngleX={5}
