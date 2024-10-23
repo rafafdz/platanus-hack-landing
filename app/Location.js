@@ -38,8 +38,7 @@ const Location = () => {
               <Image
                 src="/oficina-fintual-resize.jpg"
                 alt="Event Location"
-                layout="fill"
-                objectFit="cover"
+                fill
               />
             </div>
             <div className="md:w-2/3 p-6 flex flex-col justify-between bg-transparent">
