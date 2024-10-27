@@ -20,7 +20,7 @@ const Location = () => {
       <TypewriterTitle text="$ curl ipinfo.io/geo" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
       
       <Tilt
-        className="parallax-effect w-full max-w-lg"
+        className="parallax-effect w-full max-w-xl"
         tiltMaxAngleX={5}
         tiltMaxAngleY={5}
         perspective={1000}
@@ -56,7 +56,7 @@ const Location = () => {
                 </div>
                 <div className={`flex items-center ${isHovered ? 'text-primary' : 'text-zinc-300'}`}>
                   <FaMapMarkerAlt className="mr-2" />
-                  <span>providencia 229, stgo 🇨🇱</span>
+                  <span>fintual hq, providencia 229 🇨🇱</span>
                 </div>
               </div>
             </div>
