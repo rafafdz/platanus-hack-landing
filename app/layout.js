@@ -1,20 +1,21 @@
-import { Ubuntu_Mono, Source_Code_Pro } from 'next/font/google'
+import { JetBrains_Mono, Oxanium} from 'next/font/google'
 import { PostHogProvider } from './PostHogProvider'
 import "./globals.css"
 
-const ubuntuMono = Ubuntu_Mono({ 
-  weight: ['700'],
+const oxanium = Oxanium({ 
+  weight: ['400', '500'],
   subsets: ['latin'],
-  variable: '--font-ubuntu-mono',
+  variable: '--font-oxanium',
   display: 'swap',
 })
 
-const sourceCodePro = Source_Code_Pro({
+const jetBrainsMono = JetBrains_Mono({ 
   weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-source-code-pro',
+  variable: '--font-jetbrains-mono',
   display: 'swap',
 })
+
 
 export const metadata = {
   title: 'platanus hack',
@@ -24,8 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <PostHogProvider>
-      <html lang="es" className={`dark ${ubuntuMono.variable} ${sourceCodePro.variable}`}>
-        <body className="font-source-code-pro bg-zinc-950 text-white">{children}</body>
+      <html lang="es" className={`dark ${jetBrainsMono.variable} ${oxanium.variable}`}>
+        <body className="font-jetbrains-mono bg-zinc-950 text-white">{children}</body>
       </html>
     </PostHogProvider>
   )

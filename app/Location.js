@@ -45,7 +45,7 @@ const Location = () => {
               <div>
                 <h2 className={`text-2xl font-bold mb-2 ${isHovered ? 'text-primary' : 'text-zinc-300'}`}>platanus hack</h2>
               </div>
-              <div className="space-y-2 font-mono">
+              <div className="space-y-2">
                 <div className={`flex items-center ${isHovered ? 'text-primary' : 'text-zinc-300'}`}>
                   <FaPlay className="mr-2" />
                   <span>2024-11-22T18:45:00-03:00</span>

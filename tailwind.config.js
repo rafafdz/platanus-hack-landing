@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'ubuntu-mono': ['var(--font-ubuntu-mono)'],
-        'source-code-pro': ['var(--font-source-code-pro)'],
+        'jetbrains-mono': ['var(--font-jetbrains-mono)'],
+        'oxanium': ['var(--font-oxanium)'],
       },
       colors: {
         primary: '#FFEC40',
