@@ -48,7 +48,7 @@ export default function Countdown() {
 
     return (
         <section className="min-h-screen flex flex-col items-center justify-center p-4 gap-8">
-            <TypewriterTitle text="$ apply_countdown.tick()" className="text-2xl md:text-5xl font-bold text-center mb-4" />
+            <TypewriterTitle text="$ apply_countdown.tick()" className="font-oxanium text-2xl md:text-5xl font-bold text-center mb-4" />
             <p className="text-xl text-center">se te acaba el tiempo para postular. deadline @ 2024-11-07T00:00:00-03:00 </p>
             <Tilt
                 className="parallax-effect"
@@ -61,7 +61,7 @@ export default function Countdown() {
             >
                 <div 
                     className={`border rounded-lg p-8 shadow-2xl transition-colors duration-300 ${
-                        isHovered ? 'border-primary' : 'border-zinc-700'
+                        isHovered ? 'border-primary' : 'border-zinc-950'
                     }`}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}

@@ -84,7 +84,7 @@ const Features = () => {
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16 min-h-screen flex flex-col items-center justify-center">
-      <TypewriterTitle text="$ diff platanus-hack other-hacks" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
+      <TypewriterTitle text="$ diff platanus-hack other-hacks" className="font-oxanium text-2xl md:text-5xl font-bold mb-12 text-center" />
       <p className="text-xl leading-relaxed mb-16 text-center max-w-3xl mx-auto">
         tomamos elementos de las hackatones top del mundo para crear una hackatón pionera en chile.
       </p>

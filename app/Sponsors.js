@@ -17,7 +17,7 @@ const Sponsors = () => {
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16 min-h-screen flex flex-col items-center justify-center">
-      <TypewriterTitle text="$ ls sponsors/*.svg" className="text-2xl md:text-5xl font-bold mb-12 text-center" />
+      <TypewriterTitle text="$ ls sponsors/*.svg" className="font-oxanium text-2xl md:text-5xl font-bold mb-12 text-center" />
 
       <div className="flex flex-col gap-28 py-28">
         {logos.map((sponsorLogos, index) => (
