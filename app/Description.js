@@ -11,7 +11,7 @@ const Description = () => {
       { text: " de cero a producto en 36 horas.", style: "font-bold text-primary" }
     ],
     [
-      { text: "unimos equipos de 3 a 5 personas, cafeína, mentores y pitches asistidos por platanus para tener una hackatón pionera de su clase en chile." }
+      { text: "unimos equipos de 3 a 5 personas, cafeína, mentores y pitches asistidos por platanus para tener una hackatón de nivel internacional en chile." }
     ],
     [
       { text: "el foco es crear soluciones a problemas reales, presentarlas como corresponde con pitches que estén a la altura de la solución y que quede deployeado, disponible a cualquier persona alrededor del mundo." },
