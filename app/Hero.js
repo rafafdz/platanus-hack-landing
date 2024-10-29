@@ -14,9 +14,8 @@ const Hero = () => {
       <div className="relative z-10 flex h-screen w-full" >
         <Padding>
           <div className="flex flex-col size-full">
-
             <div className="flex flex-col mt-12">
-              <TypewriterTitle text="$ ls main-sponsors/*.svg" className="h-8 font-oxanium text-lg font-bold text-zinc-200" />
+              <TypewriterTitle text="$ ls main-sponsors/*.svg" className="h-8 font-oxanium text-lg font-bold text-zinc-200 w-fit" />
 
               <div className="flex">
                 <Image src="/hero-sponsors.svg" alt="main-sponsors" height={500} width={200} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import TypewriterTitle from './TypewriterTitle';
-import {FaVideo, FaChalkboardTeacher, FaBed, FaMicrophone, FaGlobeAmericas, FaUtensils, FaHandshake, FaUsers } from 'react-icons/fa';
+import { FaVideo, FaChalkboardTeacher, FaBed, FaMicrophone, FaGlobeAmericas, FaUtensils, FaHandshake, FaUsers } from 'react-icons/fa';
 import { GiMoneyStack } from 'react-icons/gi';
 import { RiOpenSourceFill } from 'react-icons/ri';
 
