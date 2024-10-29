@@ -172,8 +172,8 @@ const Description = () => {
   return (
     <section className="w-full min-h-screen flex flex-col items-center justify-center">
       <Padding>
-        <div className="flex">
-          <div className="flex flex-col w-1/2">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:w-1/2">
             <TypewriterTitle text="$ vim hack-description.txt" className="font-oxanium text-2xl md:text-5xl font-bold mb-12 text-center" />
             <div ref={containerRef} className="leading-relaxed mb-16 text-left max-w-2xl w-full mx-auto font-mono whitespace-pre-wrap">
               {lines.map((line, index) => (
@@ -185,7 +185,7 @@ const Description = () => {
             </div>
           </div>
 
-          <div className="flex w-1/2 items-center justify-center">
+          <div className="flex md:grow items-center justify-center">
             <div ref={tilesRef} className="grid grid-cols-2 grid-rows-2 gap-0 items-center justify-center">
               {logoTiles.map((tile, index) => (
                 <Tilt

@@ -17,7 +17,7 @@ export default function CodeTyper() {
     <div className="relative h-full">
       <pre 
         ref={codeRef} 
-        className={`z-10 bg-transparent text-zinc-700 mix-blend-plus-lighter top-0 left-0 overflow-y-auto h-full smooth-scroll whitespace-pre-wrap`}
+        className={`z-10 bg-transparent text-zinc-800 mix-blend-plus-lighter top-0 left-0 overflow-y-auto h-full smooth-scroll whitespace-pre-wrap`}
       >
         <TypingCanvas code={code} speed={0.3} />
       </pre>
