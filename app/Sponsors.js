@@ -13,7 +13,11 @@ const Sponsors = () => {
     { src: 'buk-logo-white.png', size: 170, alt: 'Buk logo', url: 'https://buk.cl/' },
   ];
   
-  const logos = [sponsorLogosMain, sponsorLogosSecondary];
+  const sponsorLogosTertiary = [
+    { src: 'oragus-logo-white.svg', size: 125, alt: 'Oragus logo', url: 'https://oragus.com/' },
+  ];
+
+  const logos = [sponsorLogosMain, sponsorLogosSecondary, sponsorLogosTertiary];
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16 min-h-screen flex flex-col items-center justify-center">
