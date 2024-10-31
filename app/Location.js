@@ -20,7 +20,7 @@ const Location = () => {
       <TypewriterTitle text="$ curl ipinfo.io/geo" className="font-oxanium text-2xl md:text-5xl font-bold mb-12 text-center" />
       
       <Tilt
-        className="parallax-effect w-full max-w-xl"
+        className="parallax-effect w-full md:w-[34rem]"
         tiltMaxAngleX={5}
         tiltMaxAngleY={5}
         perspective={1000}
@@ -29,7 +29,7 @@ const Location = () => {
         gyroscope={true}
       >
         <div 
-          className="border border-zinc-400 rounded-lg overflow-hidden mb-8 transition-all duration-300 hover:border-primary"
+          className="border border-zinc-400 rounded-lg overflow-hidden mb-8 transition-all duration-300 hover:border-primary w-full"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -39,9 +39,10 @@ const Location = () => {
                 src="/oficina-fintual-resize.jpg"
                 alt="Event Location"
                 fill
+                objectFit="cover"
               />
             </div>
-            <div className="md:w-2/3 p-6 flex flex-col justify-between bg-transparent">
+            <div className="md:w-2/3 p-4 flex flex-col justify-between bg-transparent">
               <div>
                 <h2 className={`text-2xl font-bold mb-2 ${isHovered ? 'text-primary' : 'text-zinc-300'}`}>platanus hack</h2>
               </div>
@@ -64,17 +65,17 @@ const Location = () => {
         </div>
       </Tilt>
 
-      <Tilt
-        className="parallax-effect max-w-4xl w-full"
-        tiltMaxAngleX={5}
-        tiltMaxAngleY={5}
-        perspective={1000}
-        transitionSpeed={1500}
-        scale={1.05}
-        gyroscope={true}
-      >
-        <div className="rounded-lg shadow-2xl overflow-hidden">
-          <div className="h-96 relative">
+      <div className="flex items-center justify-center w-full">
+        <Tilt
+          className="parallax-effect w-full h-96 md:size-[34rem] max-w-full"
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          perspective={1000}
+          transitionSpeed={1500}
+          scale={1.05}
+          gyroscope={true}
+        >
+          <div className="rounded-lg shadow-2xl overflow-hidden relative size-full">
             <DynamicMap position={position} />
             <div className="absolute bottom-4 left-4 flex space-x-2 z-30">
               <a
@@ -95,8 +96,8 @@ const Location = () => {
               </a>
             </div>
           </div>
-        </div>
-      </Tilt>
+        </Tilt>
+      </div>
     </section>
   );
 };

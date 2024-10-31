@@ -9,4 +9,8 @@
 .mapContainer :global(.leaflet-control-zoom-out),
 .mapContainer :global(.leaflet-control-attribution) {
   filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
-} 
+}
+
+.mapContainer :global(.leaflet-control-attribution) {
+  display: none;
+}
