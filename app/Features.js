@@ -49,7 +49,7 @@ const Features = () => {
     },
     {
       title: "deploy it",
-      description: "tu solución la tiene que puede usar cualquier persona del mundo. terminarás con un producto accesible públicamente.",
+      description: "tu solución la tiene que poder usar cualquier persona del mundo. terminarás con un producto accesible públicamente.",
       Icon: FaGlobeAmericas
     },
     {
