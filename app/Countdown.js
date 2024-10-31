@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import Tilt from 'react-parallax-tilt';
+import Tilt from './Tilt';
 import TypewriterTitle from './TypewriterTitle';
 
 export default function Countdown() {

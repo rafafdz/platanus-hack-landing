@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import Tilt from 'react-parallax-tilt';
+import Tilt from './Tilt';
 import { FaWaze, FaPlay, FaStop, FaMapMarkerAlt } from 'react-icons/fa';
 import { SiGooglemaps } from 'react-icons/si';
 import TypewriterTitle from './TypewriterTitle';

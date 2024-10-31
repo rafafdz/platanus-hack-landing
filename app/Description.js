@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import Tilt from 'react-parallax-tilt';
+import Tilt from './Tilt';
 import Image from 'next/image';
 import Padding from './Padding';
 import TypewriterTitle from './TypewriterTitle';

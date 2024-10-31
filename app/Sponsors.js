@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import TypewriterTitle from './TypewriterTitle';
-import Tilt from 'react-parallax-tilt';
+import Tilt from './Tilt';
 
 const Sponsors = () => {
   const sponsorLogosMain = [
