@@ -19,14 +19,14 @@ const Sponsors = () => {
   ];
 
   const logos = [sponsorLogosMain, sponsorLogosSecondary, sponsorLogosTertiary];
-
+  
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16 min-h-screen flex flex-col items-center justify-center">
       <TypewriterTitle text="$ ls sponsors/*.svg" className="font-oxanium text-2xl md:text-5xl font-bold mb-12 text-center" />
 
-      <div className="flex flex-col gap-28 py-28">
+      <div className="flex flex-col gap-16 py-16 lg:gap-28 lg:py-28">
         {logos.map((sponsorLogos, index) => (
-          <div className="flex flex-wrap items-center justify-center gap-32" key={index}>
+          <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-12 lg:gap-32" key={index}>
           {sponsorLogos.map(({ src, size, alt, url }, sponsorIndex) => (
             <Tilt
               key={sponsorIndex}

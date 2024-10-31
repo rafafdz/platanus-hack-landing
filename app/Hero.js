@@ -23,8 +23,8 @@ const Hero = () => {
             </div>
             <div className="flex flex-col justify-center items-start grow pb-36">
               <div className="flex flex-col md:flex-row w-full justify-center gap-3">
-                <h1 className="font-oxanium text-7xl md:text-9xl font-medium relative z-10 tracking-tighter text-center">platanus hack</h1>
-                <div className="flex flex-col text-center md:text-left justify-center text-lg md:text-3xl md:mt-4">
+                <h1 className="font-oxanium text-7xl md:text-8xl 2xl:text-9xl font-medium relative z-10 tracking-tighter text-center">platanus hack</h1>
+                <div className="flex flex-col text-center md:text-left justify-center text-lg 2xl:text-3xl md:mt-4">
                   <p>22-24.nov</p>
                   <p>santiago</p>
                 </div>
