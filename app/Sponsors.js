@@ -12,7 +12,7 @@ const Sponsors = () => {
 
   const sponsorLogosSecondary = [
     { src: 'buk-logo-white.png', size: 170, alt: 'Buk logo', url: 'https://buk.cl/' },
-    { src: 'ria-logo.png', size: 165, alt: 'RIA logo', url: 'https://ria.com/', className: 'filter brightness-0 invert' }
+    { src: 'ria-logo.png', size: 165, alt: 'RIA logo', url: 'https://www.riamoneytransfer.com/', className: 'filter brightness-0 invert' }
   ];
 
   const sponsorLogosTertiary = [
