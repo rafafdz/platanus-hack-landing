@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Hero from './Hero'
 import Description from './Description'
+import Prize from './Prize'
 import Features from './Features'
 import Countdown from './Countdown'
 import Location from './Location'
@@ -23,6 +24,7 @@ export default function Home() {
     <main className="relative">
       <Hero />
       <Description />
+      <Prize />
       <Features />
       <Countdown />
       <Location />
