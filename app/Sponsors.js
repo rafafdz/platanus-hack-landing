@@ -20,6 +20,7 @@ const Sponsors = () => {
     { src: 'fingo-logo-white.svg', size: 125, alt: 'Fingo logo', url: 'https://fingo.cl/' },
     { src: 'oragus-logo-white.svg', size: 125, alt: 'Oragus logo', url: 'https://oragus.com/' },
     { src: 'soyio-logo-white.png', size: 140, alt: 'Soyio logo', url: 'https://soyio.id/', className: 'grayscale pt-2' },
+    { src: 'mok-logo-white.png', size: 105, alt: 'Mok logo', url: 'https://mok.cl/' },
   ];
 
   const logos = [sponsorLogosMain, sponsorLogosSecondary, sponsorLogosTertiary];
