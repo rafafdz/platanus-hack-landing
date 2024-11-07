@@ -85,7 +85,8 @@ const Prize = () => {
             </Tilt>
             <p className="text-lg md:text-xl">
               en 
-              <a href="https://fintual.cl/acciones/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"> fintual acciones</a>
+              <a href="https://fintual.cl/acciones/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"> fintual acciones </a>
+              + mentorías platanus + ✨
             </p>
           </div>
         </div>
