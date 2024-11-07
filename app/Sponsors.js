@@ -16,6 +16,7 @@ const Sponsors = () => {
   const sponsorLogosTertiary = [
     { src: 'shinkansen-logo-white.svg', size: 205, alt: 'Shinkansen logo', url: 'https://shinkansen.finance/' },
     { src: 'pullpo-logo-white.svg', size: 125, alt: 'Pullpo logo', url: 'https://pullpo.io/' },
+    { src: 'fingo-logo-white.svg', size: 125, alt: 'Fingo logo', url: 'https://fingo.cl/' },
     { src: 'oragus-logo-white.svg', size: 125, alt: 'Oragus logo', url: 'https://oragus.com/' },
   ];
 
