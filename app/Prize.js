@@ -83,7 +83,7 @@ const Prize = () => {
                 <span className="md:text-[8rem] text-3xl"> USD</span>
               </div>
             </Tilt>
-            <p className="text-lg md:text-xl">
+            <p className="text-lg md:text-xl text-center">
               en 
               <a href="https://fintual.cl/acciones/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"> fintual acciones</a>
               . además mentorías platanus + ✨
