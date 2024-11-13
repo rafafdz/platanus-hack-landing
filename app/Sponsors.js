@@ -16,13 +16,15 @@ const Sponsors = () => {
   ];
 
   const sponsorLogosTertiary = [
+    { src: 'ey-logo.svg', size: 60, alt: 'EY logo', url: 'https://ey.com/', className: 'grayscale invert pb-8' },
     { src: 'shinkansen-logo-white.svg', size: 205, alt: 'Shinkansen logo', url: 'https://shinkansen.finance/' },
     { src: 'pullpo-logo-white.svg', size: 125, alt: 'Pullpo logo', url: 'https://pullpo.io/' },
     { src: 'fingo-logo-white.svg', size: 125, alt: 'Fingo logo', url: 'https://fingo.cl/' },
     { src: 'oragus-logo-white.svg', size: 125, alt: 'Oragus logo', url: 'https://oragus.com/' },
     { src: 'soyio-logo-white.png', size: 140, alt: 'Soyio logo', url: 'https://soyio.id/', className: 'grayscale pt-2' },
+    { src: 'salduu-logo-white.svg', size: 105, alt: 'Salduu logo', url: 'https://salduu.com/' },
     { src: 'mok-logo-white.png', size: 105, alt: 'Mok logo', url: 'https://mok.cl/' },
-  ];
+  ]
 
   const logos = [sponsorLogosMain, sponsorLogosSecondary, sponsorLogosTertiary];
 
