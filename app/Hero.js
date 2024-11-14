@@ -46,7 +46,7 @@ const Hero = () => {
                     postular
                   </button>
                   {isDeadlinePassed && (
-                    <div className="absolute z-30 w-72 -top-28 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200 ease-out bg-zinc-800 text-white px-4 py-2 rounded-lg text-sm border-primary border-1">
+                    <div className="absolute z-30 w-72 -top-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200 ease-out bg-zinc-800 text-white px-4 py-2 rounded-lg text-sm shadow-xl">
                       <p>
                         las postulaciones cerraron el 13 de noviembre a las 23:59. dudas? <a href="mailto:rafael@platan.us" className="text-primary">rafael@platan.us</a>
                       </p>
