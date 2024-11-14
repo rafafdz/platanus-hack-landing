@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Tilt from './Tilt';
 import TypewriterTitle from './TypewriterTitle';
+import { deadline } from './constants';
 
 export default function Countdown() {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -22,7 +23,7 @@ export default function Countdown() {
     }, []);
 
     function calculateTimeLeft() {
-        const difference = +new Date("2024-11-13T23:59:59-03:00") - +new Date();
+        const difference = +deadline - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {
@@ -49,7 +50,7 @@ export default function Countdown() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center p-4 gap-8">
             <TypewriterTitle text="$ apply_countdown.tick()" className="font-oxanium text-2xl md:text-5xl font-bold text-center mb-4" />
-            <p className="text-xl text-center">se te acaba el tiempo para postular. deadline @ 2024-11-13T23:59:59-03:00</p>
+            <p className="text-xl text-center">se te acaba el tiempo para postular. deadline @ {deadline.toLocaleString()}</p>
             <Tilt
                 className="parallax-effect"
                 tiltMaxAngleX={5}

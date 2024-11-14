@@ -9,6 +9,7 @@ import Countdown from './Countdown'
 import Location from './Location'
 import Sponsors from './Sponsors'
 import Footer from './Footer'
+import { deadline } from './constants';
 
 export default function Home() {
   const [hasLoggedMessage, setHasLoggedMessage] = useState(false);
@@ -26,7 +27,7 @@ export default function Home() {
       <Description />
       <Prize />
       <Features />
-      <Countdown />
+      {deadline > new Date() && <Countdown />}
       <Location />
       <Sponsors />
       <Footer />

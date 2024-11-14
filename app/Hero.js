@@ -2,8 +2,11 @@ import Padding from './Padding'
 import CodeTyper from './CodeTyper'
 import Image from 'next/image'
 import TypewriterTitle from './TypewriterTitle'
+import { deadline } from './constants';
 
 const Hero = () => {
+  const isDeadlinePassed = new Date() > deadline;
+
   return (
     <>
       <div className="absolute inset-0 overflow-hidden w-full h-screen bg-gradient-to-b from-zinc-800 to-zinc-950">
@@ -30,11 +33,26 @@ const Hero = () => {
                 </div>
               </div>
               <div className="px-12 md:px-0 flex flex-col sm:flex-row gap-4 mt-8 justify-center w-full">
-                <a href="https://platan.us/hack/apply" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                  <button className="w-full md:w-auto bg-primary hover:bg-secondary text-black font-bold py-3 px-8 transition duration-300 ease-in-out rounded-full">
+                <div className="relative group flex items-center justify-center">
+                  <button
+                    className={`w-full md:w-auto font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out
+                      ${isDeadlinePassed
+                        ? 'bg-zinc-600 cursor-not-allowed opacity-70'
+                        : 'bg-primary hover:bg-secondary text-black'
+                      }`}
+                    disabled={isDeadlinePassed}
+                    onClick={() => !isDeadlinePassed && window.open('https://platan.us/hack/apply', '_blank')}
+                  >
                     postular
                   </button>
-                </a>
+                  {isDeadlinePassed && (
+                    <div className="absolute z-30 w-72 -top-28 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200 ease-out bg-zinc-800 text-white px-4 py-2 rounded-lg text-sm border-primary border-1">
+                      <p>
+                        las postulaciones cerraron el 13 de noviembre a las 23:59. dudas? <a href="mailto:rafael@platan.us" className="text-primary">rafael@platan.us</a>
+                      </p>
+                    </div>
+                  )}
+                </div>
                 <a href="https://platan.us/hack/sponsor-deck" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                   <button className="w-full md:w-auto text-white border-white hover:text-primary hover:border-primary font-bold py-3 px-8 transition-all duration-300 ease-in-out rounded-full border backdrop-blur-sm">
                     quiero ser sponsor
