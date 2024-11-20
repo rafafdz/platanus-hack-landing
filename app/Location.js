@@ -16,6 +16,7 @@ const Location = () => {
   const position = [-33.43586850387162, -70.6302271011865]
   const [isHovered, setIsHovered] = useState(false);
 
+  const wazeUrl = `https://www.waze.com/ul?ll=${position[0]},${position[1]}&navigate=yes`
   return (
     <section className="min-h-screen flex flex-col items-center justify-center">
       <Padding>
@@ -90,7 +91,7 @@ const Location = () => {
                     <SiGooglemaps className="w-6 h-6 text-primary" />
                   </a>
                   <a
-                    href="https://www.waze.com/ul?ll=-33.4267,-70.6167&navigate=yes"
+                    href={wazeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full shadow-md hover:bg-zinc-700 transition duration-300 bg-zinc-950"
